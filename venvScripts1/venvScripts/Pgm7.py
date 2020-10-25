@@ -1,0 +1,5 @@
+print("Sum of 2 nos=",80+10)
+print("Sub of 2 nos=",80-10)
+print("Mul of 2 nos=",80*10)
+print("Div of 2 nos=",80/10)
+print("Mod of 2 nos=",80%10)

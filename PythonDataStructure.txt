@@ -1,0 +1,475 @@
+List :
+
+a)Empty list
+a = [] or a = list()
+
+b)Adding Elements to a list
+a = [10,30,40]
+a.append(50)
+
+Note : Append func will always insert an element at the end of the list
+	   List is a Index based and every element is attached with the Index value
+	   Index starts with zero and it ends with size-1
+	   In a list element can be accessed using negative index negative index starts with -1
+	   
+c)Inserting element into perticular position
+a = [10,30,40,60,70]
+a.insert(3,50)
+
+Note : Insert func will behave as append if the index value greater than current size of the list
+	   Ex : a.insert(10,50)
+	   
+d)Updating an element in a list
+a = [10,30,40,60,70]
+a[0] = 150
+
+Note : while updating existing element if the index doesnot exists it will throw index error
+a[10] = 150
+
+
+e)Size of the list
+a = [10,30,40,60,70]
+size = len(a)
+
+f)Removing element from the list
+a = [10,30,40,60,70]
+a.remove(30)
+
+Note : If element doesnot exists in a list Remove() will throw "Value Error"
+
+	   Remove() will accept elements , then it search element in a list , if the element exists it removes element from the list
+	   
+a = [10,30,40,60,70]
+a.pop(2)
+
+Note : Pop() will accept index and it will remove the element of perticular index and then it return the element
+
+	   pop() will remove the last element if user is not defining index value
+	   a.pop()
+	   
+	   
+g)printing elements of the list
+
+Approach 1 : 
+a = [10,30,40,60,70]
+size = len(a)
+
+for i in range(0,size)
+	print(a[i])
+	
+Approach 2 :
+a = [10,30,40,60,70]
+
+for element in a:
+	print(element)
+	
+Note : List accepts duplicate elements and every operation is performed on the first element if the element is duplicate in a list
+
+h)Removing all elements from a list
+a = [10,30,40,60,70]
+a.clear()
+
+
+i)How to get the count of duplicate elements
+count() will return no of occurance of a perticular element in a list , if element doesnot exists in a list it returns zero
+
+a = [10,30,40,60,70]
+a.count(40)
+
+
+j)How to get index of an element
+a = [10,30,40,60,70,40,50,40]
+a.index(40) ------ > o/p 2
+a.index(40,3,7) ------ > o/p 5
+
+
+k)Sorting elements in a list
+a = [10,30,40,60,70,40,50,40]
+a.sort()
+
+a.sort(reverse=True)
+
+
+l)Merging multiple list
+a = [40,70,10,50,20]
+b = [80,90,100]
+c = a+b ------ > o/p [40,70,10,50,20,80,90,100]
+
+
+
+m)Multi Dimensional list
+a = [40,70,10,50,20]
+b = [80,90,100]
+
+a.append(b) ------- > o/p [40,70,10,50,20[80,90,100]]
+
+
+
+
+Dictionaries :
+
+a)Dictionary is represented using {}
+d = {}
+
+In a dictionary data is stored in the form of Key and value pair
+
+{"key1":"value1","key2":"value2"}
+
+
+b)To refer element in a dictionary always use key
+
+d = {"name":"Ram","age":20}
+print(d['name'])
+print(d.get('name'))
+
+
+c)Adding content to a Dictionary
+
+d = {"name":"Ram","age":20}
+d.update({"address":"OAR"})
+o/p ----- > {"name":"Ram","age":20,"address":"OAR"}
+
+Note : update() will always accept content in key and value pair
+
+d)Updating content of a Dictionary
+
+Note : If the key already exists in a dictionary it will update corresponding value
+Ex : 
+d = {"name":"Ram","age":20,"address":"OAR"}
+d.update({"address":"Hebbal"})
+
+OR
+
+d['address'] = "Hebbal"
+
+o/p ---- > {"name":"Ram","age":20,"address":"Hebbal"}
+
+
+
+e)In a dictionary we can search for a key but not for the values
+
+d = {"name":"Ram","age":20,"address":"OAR"}
+
+if "age" in d:
+	print("key exists")
+else :
+	print("key doesnot exists")
+	
+f)Removing elements from a dictionary
+
+d = {"name":"Ram","age":20,"address":"OAR"}
+
+d.pop("name")
+
+Note : pop() accepts key and it removes key and value from a dictionary and then it return value
+Note : If key doesnot exists in a dictionary pop() will throw key error
+
+
+g)Removing elements from a dictionary
+
+d = {"name":"Ram","age":20,"address":"OAR"}
+
+del d['name']
+
+
+h)Dictionary inside a dictionary
+
+d = {
+	 "name":"Ram",
+	 "age":20,
+	 "address":"OAR",
+	 "dob":{
+			"day":16,
+			"month":"Jan",
+			"year":1990
+		    }
+	}
+	
+print(d['dob']['year'])
+print(d.get('dob').get('year'))
+
+
+i)How to get only keys from a Dictionaries
+
+d = {"name":"Ram","age":20,"address":"OAR"}
+
+keys = d.keys()
+print(keys)
+
+
+j)How to get only values from a Dictionaries
+
+d = {"name":"Ram","age":20,"address":"OAR"}
+values = d.values()
+print(values)
+
+
+k)Dictionary with list
+
+d = {"name":"Ram","age":20,"marks":[20,30,40,50]}
+
+print(d['marks'][0])
+
+print(d['marks'].append(60))
+
+
+l)Removing all content of dictionary
+
+d = {"name":"Ram","age":20,"address":"OAR"}
+d.clear()
+
+
+
+
+
+String : 
+
+Group of characters are refered as string. String can be represented using single quotes or double quotes
+
+s = 'India'
+OR
+s = "India"
+
+a)Printing every character of a string
+
+Approach 1 : 
+s = 'India'
+size = len(s)
+for i in range(0,size):
+	prints[i]
+	
+Approach 2 :
+str = 'India'
+for s in str:
+	print(s)
+
+	
+b)Converting character to uppercase/lowercase
+
+str = 'Developer'
+s = str.upper()
+print(s)
+s = str.lower()
+print(s)
+
+
+c)How to check the String case
+
+str = 'DEVELOPER'
+status = str.islower()
+print(status)
+status = str.isupper()
+print(status)
+
+
+d)Split a string
+
+str = 'Python and Selenium Automation'
+s = str.split(' ')
+
+
+e)Replace a string
+Str = 'Python and Selenium Automation'
+s = str.replace(' ','$')
+
+
+f)How to get Index of a perticular character
+str = 'Python and Selenium Automation'
+index = str.index('o')
+
+index = str.index('o',5)
+
+
+g)How to count a perticular character in a string
+str = 'Python and Selenium Automation'
+count = str.count('o')
+print(count)
+
+
+
+
+Tuples : 
+
+Are represented using ()
+
+a)Tuples will allow duplicate values
+a = (20,40,50,60,40)
+print(a)
+
+
+b)Tuple is a immutable object and the value can't be modified or updated
+
+c)Tuple are mainly used for Math() functions
+
+d)Tuples can be accessed using index value
+a = (20,40,50,60,40)
+print(a)
+print(a[0])
+
+
+e)index function
+a = (20,40,50,60,40)
+print(a.index(60))
+
+
+f)count function
+a = (20,40,50,60,40)
+print(a.count(40)
+
+
+g)From a tuple we cant remove elements
+a = (20,40,50,60,40)
+del a[0]
+o/p ---- > TypeError : 'tuple' object doesnot support item deletion
+
+
+
+
+
+Set : 
+
+
+a)Set is represented using below functionality
+b = Set()
+
+
+b)Set is UnOrdered DataStructure and it doesnot allow duplicate elements
+b = {20,40,10,50,90,10,60,10}
+print(b)
+o/p ----- > {40,10,50,20,90,60}
+
+
+c)Set doesnot support indexing
+b = {20,40,10,50,90,10,60,10}
+print(b[0])
+
+
+d)Adding elements into a set
+b = {20,40,10,50,90,10,60,10}
+print(b)
+b.add(200)
+print(b)
+
+
+e)Merging Elements of 2 different set
+Note : Set doesnot support concatenation of elements of multiple sets
+
+We can use update to merge 2 sets
+
+b = {20,40,10,50,90}
+c = {10,30,40}
+
+b.update(c)
+print(b)
+print(c)
+
+o/p ---- > {40,10,50,20,90,30}
+		   {40,10,30}
+		   
+		   
+f)Removing elements from a set
+
+b = {20,40,10,50,90}
+b.remove(40)
+
+
+g)Updating elements of a set
+
+b = {20,40,10,50,90}
+print(b)
+b.remove(40)
+b.add(80)
+print(b)
+
+
+h)Union , Intersection and difference of two sets
+
+x = {10 , 30 , 80 , 100}
+y = {40 , 60 , 10 , 30 , 200}
+
+u = x.union(y)
+print(x)
+
+u = x.intersection(y)
+print(x)
+
+u = x.difference(y)
+print(x)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

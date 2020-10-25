@@ -1,0 +1,25 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "venvScripts.com.python.UdemyRestApi.RestApiUsing_PyTest",
+    "children" : [ {
+      "name" : "test_oAuthentication",
+      "children" : [ {
+        "name" : "test_UploadImage_api_UsingoAuthToken",
+        "uid" : "ee1ae13de9ea635b",
+        "parentUid" : "d6f0af72f4f451f4d558a1da54090111",
+        "status" : "passed",
+        "time" : {
+          "start" : 1561022013673,
+          "stop" : 1561022014158,
+          "duration" : 485
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d6f0af72f4f451f4d558a1da54090111"
+    } ],
+    "uid" : "6a8ec62ea8e100f74fa1ec8cee27c6a1"
+  } ]
+}
