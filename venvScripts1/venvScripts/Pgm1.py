@@ -1,0 +1,2 @@
+print("Kiran")
+print('kiran')

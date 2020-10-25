@@ -1,0 +1,11 @@
+[ {
+  "uid" : "ee1ae13de9ea635b",
+  "name" : "test_UploadImage_api_UsingoAuthToken",
+  "time" : {
+    "start" : 1561022013673,
+    "stop" : 1561022014158,
+    "duration" : 485
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

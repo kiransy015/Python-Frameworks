@@ -1,0 +1,17 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_UploadImage_api_UsingoAuthToken",
+    "uid" : "ee1ae13de9ea635b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1561022013673,
+      "stop" : 1561022014158,
+      "duration" : 485
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  } ]
+}

@@ -1,0 +1,68 @@
+{
+  "uid" : "ee1ae13de9ea635b",
+  "name" : "test_UploadImage_api_UsingoAuthToken",
+  "fullName" : "venvScripts.com.python.UdemyRestApi.RestApiUsing_PyTest.test_oAuthentication#test_UploadImage_api_UsingoAuthToken",
+  "historyId" : "0e0107c0120ff19854823607987e8cf6",
+  "time" : {
+    "start" : 1561022013673,
+    "stop" : 1561022014158,
+    "duration" : 485
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e1675379c2e7d4a",
+      "name" : "stdout",
+      "source" : "e1675379c2e7d4a.txt",
+      "type" : "text/plain",
+      "size" : 3424
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "venvScripts.com.python.UdemyRestApi.RestApiUsing_PyTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_oAuthentication"
+  }, {
+    "name" : "host",
+    "value" : "N-20HEPF0WQ5Q2"
+  }, {
+    "name" : "thread",
+    "value" : "17432-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "venvScripts.com.python.UdemyRestApi.RestApiUsing_PyTest.test_oAuthentication"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ee1ae13de9ea635b.json",
+  "parameterValues" : [ ]
+}
